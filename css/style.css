@@ -605,9 +605,11 @@ about section
     min-height: 100vh;
 }
 .about-section .about-img {
+    display: flex;
     flex: 0 0 40%;
     max-width: 40%;
-    padding: 0 px;
+    flex-direction: column;
+    align-items: center;
 }
 .about-section .about-img .img-box {
     padding: 15px;
@@ -644,9 +646,14 @@ about section
     color: var(--skin-color);
 }
 .about-section .about-info {
+    display: flex;
     flex: 0 0 60%;
     max-width: 60%;
     padding: 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .about-section .about-info p {
     font-size: 16px;
@@ -783,8 +790,8 @@ about section
     left: -30px;
 }
 .about-section .timeline .timeline-item-inner .icon {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-color: var(--bg-black-50);
     text-align: center;
     border: 1px solid var(--bg-black-100);
@@ -794,6 +801,9 @@ about section
     color: var(--skin-color);
     position: absolute;
     top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .about-section .timeline .timeline-item:nth-child(odd) .icon {
     right: -70px;
